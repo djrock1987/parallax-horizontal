@@ -1,4 +1,4 @@
-[data-speed] {
+    [data-speed] {
     bottom: 0;
 }
 .disable-hover {
@@ -23,7 +23,7 @@
 }
 .Parallax {
     color: #ffffff;
-    font-family: 'PT Sans', Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .Parallax a {
     color: #ffffff;
@@ -47,13 +47,14 @@
         color: #0045BF;
     font-weight: bold;
     font-size: 3rem;
+    line-height: 1; 
 }
  .middleCaption h1, .middleCaption h2, .middleCaption h3, .middleCaption .h1 {
-    position: absolute;
-    top: 26%;
+    top: 33%;
     bottom: auto;
-        color: #0045BF;
-    font-weight: bold;
+    color: #0045BF;
+    font-weight: 100;
+    line-height: 1;
     }
  .bottomCaption h1, .bottomCaption h2, .bottomCaption h3, .bottomCaption .h1 {
     position: absolute;
@@ -61,14 +62,16 @@
     bottom: 9%;
         color: #0045BF;
     font-weight: bold;
-     font-size: 3rem;
+     font-size: 2.2rem;
     }
 #intro h1 {
     width: 80%}
 .intro-pic {
-    height: 100%;
+    height: 80%;
+    top:10% !important;
     top: auto;
     max-height: 993px;
+    left:0 !important;
 }
 .test-subject {
     height: 106%;
@@ -164,12 +167,13 @@
     filter: alpha(opacity=0.5);
 }
 .kisLayer03 {
-    left: 16.66%;
-    top: 23%;
-    width: 70%;
-    margin-top: -12%;}
+    left: 27%;
+    top: 30%;
+    width: 45%;
+    margin-top: -12%;   
+}
 .kisLayer04 {
-    top: 50%;
+    top: 50%;   
     left: 25%;
     width: 46.2%;
     margin-top: -10%}
@@ -206,7 +210,7 @@
     top: 0;
     z-index: 8020;
     display: none;
-    width: 180px;
+    width: 100px;
     height: 100%;
     background: none repeat scroll 0 0 transparent;
     border: medium none;
@@ -218,10 +222,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 50px;
-    height: 80px;
+    width: 38px;
+    height: 112px;
     margin-top: -40px;
-    margin-left: -20px;
+    margin-left: 0px;
 }
 .left-arrow.touch, .right-arrow.touch {
     position: absolute;
@@ -235,25 +239,22 @@
     margin: 0;
 }
 .left-arrow {
-    top: 10.5%;
+    top: 0%;
     bottom: 0;
-    left: 0;
+    left: -30px;
     height: auto;
-    margin-top: 190px;
+    margin-top: 0px;
 }
 .left-arrow>img {
     top: 44.75%;
     margin-top: -150px;
 }
 .left-arrow.touch {
-    left: 60px;
+        left: -35px;
 }
 .left-arrow:hover>img {
     margin-left: -30px;
-    -webkit-transition: margin-left 0.3s ease-out;
-    -moz-transition: margin-left 0.3s ease-out;
-    -o-transition: margin-left 0.3s ease-out;
-    transition: margin-left 0.3s ease-out;
+ 
 }
 .right-arrow {
     right: 0;
@@ -263,10 +264,7 @@
 }
 .right-arrow:hover>img {
     margin-left: -10px;
-    -webkit-transition: margin-left 0.3s ease-out;
-    -moz-transition: margin-left 0.3s ease-out;
-    -o-transition: margin-left 0.3s ease-out;
-    transition: margin-left 0.3s ease-out;
+   
 }
 
     .navbar-light .navbar-toggler{
@@ -281,11 +279,15 @@
 
 }
 .linea{
-	bottom: 35%;
+	bottom: 33%;
     position: relative;
     left: -2%;
 }
-
+.curazao{
+    width: 160px;
+    padding-top: 30%;
+}
+}
 @media screen and (max-width: 321px) {
     .left-arrow.touch {
     left: 0;
@@ -367,23 +369,31 @@
     position: absolute;
     margin: calc(2% - 220px);
     width: 6%;
+    display: none !important;
 }
 .mundo{
 	top:20%;
 }
 .coljuegos{
-	left:8.8% !important;
-	bottom: -50px;
+	    left: 9% !important;
+    bottom: -25px;
+    width: 100px !important;
 }
 .logoe{
-	left:9.3% !important;
-	top:25px;
+    left: 9.2% !important;
+    top: 4px;
+    width: 1%;
 }
 .text-fogid{
-	left: 42% !important;
+	left: 30% !important;
     font-size:1rem;
-     color: #0045BF;
-       text-shadow: 1px 2px 2px #887878;
+    color: #0045BF;
+    
+}
+.beneficios{
+    width: 65%;
+    bottom: -21%;
+
 }
 
 #navbarNav li{
@@ -404,6 +414,7 @@
     overflow: hidden;
    /* border: 1px solid #ffffff;*/
     background-color: rgba(255,255,255,0);
+    
 }
 
 /* Style the buttons inside the tab */
@@ -416,11 +427,13 @@
 /*    padding: 14px 16px;*/
     transition: 0.3s;
     font-size: 17px;
+    width: 16.6%;
 }
+
 
 /* Change background color of buttons on hover */
 .tab1 button:hover {
-    background-color: #f1f1f1f1;
+   /* background-color: #f1f1f1f1;*/
 }
 
 /* Create an active/current tablink class */
@@ -439,19 +452,20 @@
 	line-height: 16px;
 }
 .img-experiencia{
-	    width: 320px;
+	width: 180px !important;
+    margin: 0 auto;
 }
 
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 6px 12px;
+    padding: 0px 12px;
     
     border-top: none;
 }	
 
 .tablinks{
-    width: 33.2%;
+    width: 16.6%;
     background-color: #ffffff00;
 }
 
@@ -478,25 +492,164 @@
 }*/
 .cont-img{
 	width: 100%;
-	height: 400px;
+	height: 390px;
 	overflow: hidden;
 }
 .img-foto{
 	width: 100%;
+    margin-top: 5px;
 }
 .img-icono{
+    width: 100%;
 	    height: 170px;
 }
 #kynsi h2{
 	color: #0045BF;
-}
+}   
 
 .img-mechanics{
 	position: relative;
-    bottom: 19% !important;
+    bottom: 10% !important;
+    width: 60%
+}
+.legales{
+    color: #0045BF;
+    font-size: 0.6rem;
+    left: 0% !important;
+        text-align: center;
+bottom: 26px;
+}
+.tym{
+    color: #0045BF !important;
+    text-decoration: underline !important;
+    font-weight: bold;
 }
 
-@media only screen and (max-width: 768px){
+.ciudad{
+    color: #e54f0f !important;
+}
+.conoce{
+    position: relative;
+    top: 85% !important;
+    left: 45%;
+}
+.tablinks{
+    width: 16.5%;
+    background-color: #ffffff00;
+}  
+.class1{    
+   height: auto;
+    top: 5%;
+    width: 50%;
+    left: 70%;   
+    }  
+
+        .cuba{
+        padding-top: 30px;
+        margin-left:    30px; 
+} 
+
+#tablinks{
+    transition: .5s ease-in-out;
+}
+/*button.tablinks svg #mexico{
+    fill: #0047BA;
+
+}*/
+
+/*button.tablinks svg:hover #mexico{
+    fill: #e54f0f;
+}
+
+button.tablinks svg #curazao{
+    fill: #0047BA;
+
+}*/
+
+button.tablinks svg:hover .svgcolor{
+    fill: #e54f0f;
+}
+
+button.tablinks svg .svgcolor{
+    fill: #0047BA;
+
+}
+button.tablinks svg:active .svgcolor{
+    fill: #e54f0f;
+}
+
+button.tablinks svg:hover #curazao{
+    fill: #e54f0f;
+}
+
+
+/*button.tablinks svg #uba{
+    fill: #0047BA;
+}
+    
+
+button.tablinks svg:hover #uba{
+    fill: #e54f0f;
+}*/
+
+/*button.tablinks svg #machupicchu{
+    fill: #0047BA;
+}
+    
+
+button.tablinks svg:hover #machupicchu{
+    fill: #e54f0f;
+}*/
+ 
+/*button.tablinks svg #madrid{
+    fill: #0047BA;
+}
+    
+
+button.tablinks svg:hover #madrid{
+    fill: #e54f0f;
+}*/
+
+/*button.tablinks svg #rio{
+    fill: #0047BA;
+}
+    
+
+button.tablinks svg:hover #rio{
+    fill: #e54f0f;
+}*/
+#rio2{
+        /*width: 100%;*/
+    height: 10em;
+    margin-top: 2%;
+    }
+
+#machupicchu2{
+        /*width: 100%;*/
+    height: 12em;
+    margin-top: 3%;
+    margin-left: -60%;
+    }
+#curazao2{
+        /*width: 100%;*/
+    height: 7em;
+    margin-top: 28%;
+    margin-left: -28%;
+    }
+#cuba2{
+        /*width: 100%;*/
+    height: 6.5em;
+    margin-top: 32%;
+    margin-left: 10%;
+    }
+
+#mexico2{
+        /*width: 100%;*/
+        height: 10.2em;
+            margin-left: 30%;
+    }
+}
+@media only screen and (max-width: 769px){
 	.experiencias{
 		width: 100%;
 	    top: 10% !important;
@@ -526,6 +679,73 @@
     left: 8% !important;
     bottom: -50px;
 }
+
+.tab1 button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+/*    padding: 14px 16px;*/
+    transition: 0.3s;
+    font-size: 17px;
+    width: 16.6%;
+}
+.ciudad{
+    color: #e54f0f !important;
+    display:none;
+}
+
+.class{
+    
+    width: 100%;
+    height: auto;
+    }
+
+
+.tablinks{
+    width: 32.6%;
+    background-color: #ffffff00;
+}   
+.tab1 button {
+    width: 32.6%;
+}
+.conoce{
+    position: relative;
+    top: 88.7% !important;
+    left: 45%;
+    display: none !important;
+}
+        .cuba{
+        padding-top: 30px;
+        margin-left:    10px; 
+} 
+#rio2{
+        /*width: 100%;*/
+        height: 10em;
+    }
+
+#machupicchu2{
+        /*width: 100%;*/
+    height: 12em;
+    margin-top: 15%;
+    }
+#curazao2{
+        /*width: 100%;*/
+    height: 5.5em;
+    margin-top: 45%;
+    }
+#cuba2{
+        /*width: 100%;*/
+        height: 3.5em;
+    margin-top: -55%;
+    }
+
+#mexico2{
+        /*width: 100%;*/
+        height: 6em;
+    margin-top: -95%;
+    }
 }
 
 @media only screen and (max-width: 560px){
@@ -558,18 +778,23 @@
 	    padding: .5rem .1rem;
 	}
 	.logoe {
-    left: 7.74% !important;
+   left: 7.5% !important;
     top: 10px;
+    width: 4%;
 }
-	.coljuegos {
-    left: 6.2% !important;
-    bottom: -60px;
+.coljuegos {
+    left: 7.2% !important;
+    bottom: -32px;
+    height: auto;
+        width: 100px !important;
+
 }
 .avion{
-   
+   display: none !important;
     top: 30%;
     margin: calc(9% - 220px);
-    width: 15%;9.38.8
+    width: 15%;9.38.8;
+    
 }
 .experiencias p{
 	display: none;
@@ -604,35 +829,149 @@
 	    bottom: 27%;
 }
 .sm-beneficios-1{
-	    bottom: 0.7%;
+	    bottom: 9.7%;
 
 }
 .sm-beneficios-2{
-	bottom: 4.7%;
+	bottom: 8.7%;
+}
+.kisLayer03 {
+    left: 0%;
+    top: 20%;
+    width: 100%;
+    margin-top: -12%;
+}
+.ciudad{
+    color: #e54f0f !important;
+    display:none;
 }
 
+.legales {
+    color: #0045BF;
+    font-size: 0.6rem;
+    left: -.5% !important;
+    text-align: center;
+    width: 15%;
+ bottom: 30px;
+}
+.tablinks{
+    width: 32.6%;
+    background-color: #ffffff00;
+}
+.tab1 button {
+    width: 32.6%;
+}
+.class {
+    bottom: 10%;
+    width: 564px;
+    height: auto;
+    left: 33%;  
+}
+.linea {
+    bottom: 36%;
+    position: relative;
+    left: 2%;
+    width: 40%;
+}
+.img-mechanics{
+    position: relative;
+    bottom: 5% !important;
+    width: 90%;
+}
+.img-mechanics2{
+    position: relative;
+    bottom: 7% !important;
+}
+.conoce{
+    position: relative;
+    top: 88.7% !important;
+    left: 45%;
+    display: none !important;
+}
+.ocho{
+        text-align: center !important;
+        margin-bottom: 5px;
+}
+.right-arrow.touch {
+    right: 0px;
+}
+.class1{
+    
+    width: 100%;
+    height: auto;
+    top: 29%;
+    } 
+    .cuba{
+        padding-top: 30px;
+        padding-left: 10px; 
+}
+ .bottomCaption h1, .bottomCaption h2, .bottomCaption h3, .bottomCaption .h1 {
+         position: absolute;
+    /* top: 5%; */
+    bottom: 10%;
+    color: #0045BF;
+    font-weight: bold;
+    text-align: right;
+    left: 1% !important;
+    font-size: 1.5rem;
+    }
+            .cuba{
+        padding-top: 30px;
+        margin-left:    10px; 
+} 
+#rio2{
+        /*width: 100%;*/
+        height: 5.2em;
+    }
 
+#machupicchu2{
+        /*width: 100%;*/
+        height: 5em;
+    }
+#curazao2{
+        /*width: 100%;*/
+    height: 3.5em;
+    margin-top: 45%;
+    }
+#cuba2{
+        /*width: 100%;*/
+        height: 3.5em;
+    margin-top: -55%;
+    }
 
+#mexico2{
+        /*width: 100%;*/
+        height: 6em;
+    margin-top: -95%;
+    }
 }
 
 @media only screen and (max-width: 400px){
 	.topCaption h1, .topCaption h2, .topCaption .h1 
 	{
-    top: 11.5%;
-    font-size: 1.4rem;
+    top: 10.5%;
+    font-size: 1.2rem;
     color: #0045BF;
     font-weight: bold;
 }
+.middleCaption h3{
+    top: 26%;
+    bottom: auto;
+    color: #0045BF;
+    font-weight: 500;
+    line-height: 1;
+}
 	.avion {
-    top: 30%;
+    top: 34%;
     /* position: absolute; */
     margin-left: calc(10% - 220px);
-    width: 15%;
+    width: 14%;
     /* left: 29px; */
+     display: none !important;
 }
 	.experiencias{
 		width: 100%;
-	    top: 10% !important;
+	    top: 9% !important;
 	}
 	.text-fogid {
     left: 15% !important;
@@ -642,11 +981,12 @@
     /* font-weight: bold; */
 }
 	.cont-img{
-		height: 150px;
+		height: 145px;
 	}
 	.img-icono{
 		width: 100%;
-		height: 80px;
+		height: 70px;
+        padding-left: 10px;
 	}
 	.navbar {
 	    position: relative;
@@ -660,13 +1000,21 @@
 	    justify-content: unset;
 	    padding: .5rem 1rem;
 	}
-	.logoe {
-    left: 7.54% !important;
-    top: 10px;
+.logoe {
+    left: 8.2% !important;
+    top: 5px;
+    width: 60px;
 }
-	.coljuegos {
-    left: 6% !important;
-    bottom: -60px;
+.ocho{
+        text-align: center !important;
+        margin-bottom: 5px;
+}
+.coljuegos {
+    left: 7% !important;
+    bottom: -33px;
+    width: 60px;
+    height: auto;
+    width: 100px !important;
 }
 
 .bcodeLayer {
@@ -682,16 +1030,16 @@
 	    bottom: 27%;
 }
 .sm-beneficios-1{
-	    bottom: 0.7%;
+	    bottom: 4.7%;
 
 }
 .sm-beneficios-2{
-	bottom: 4.7%;
+	bottom: 8.7%;
 }
 
  .bottomCaption h1, .bottomCaption h2, .bottomCaption h3, .bottomCaption .h1 {
-    bottom: 8%;
-    font-size: 1.5rem;
+    bottom: 10%;
+    font-size: 1.1rem;
     color: #0045BF;
     font-weight: bold;
     text-align: right;
@@ -715,10 +1063,217 @@
     position: relative;
     left: 10%;
     width: 50%;
-}.img-mechanics {
-    position: relative;
-    bottom: 0% !important;
 }
-}	
-	
 
+.kisLayer03 {
+    left: 0%;
+    top: 20%;
+    width: 100%;
+    margin-top: -12%;
+}
+.ciudad{
+    color: #e54f0f !important;
+    display:none;
+}
+.legales {
+    color: #0045BF;
+    font-size: 0.6rem;
+        left: -.5% !important;
+    text-align: center;
+    width: 16%;
+        bottom: 20px;
+}
+.class{
+    bottom: 5%;
+    width: 564px;
+    height: auto;
+    left: 33%;
+}   
+.tablinks{
+    width: 32.6%;
+    background-color: #ffffff00;
+}
+.img-mechanics2 {
+    position: relative;
+    bottom: 3% !important;
+    width: 52%;
+    top: 0px;
+}
+.intro-pic {
+    height: 80%;
+    top: 10%;
+    max-height: 993px;
+    left: 0% !important;
+}
+.conoce{
+    position: relative;
+    top: 88.7% !important;
+    left: 45%;
+    display: none !important;
+}
+.ocho{
+        text-align: center !important;
+        margin-bottom: 5px;
+}
+.right-arrow.touch {
+    right: 0px;
+}
+.class1{
+    
+    width: 100%;
+    height: auto;
+    top: 29%;
+    } 
+    .cuba{
+        padding-top: 30px;
+        margin-left:    10px; 
+} 
+ .bottomCaption h1, .bottomCaption h2, .bottomCaption h3, .bottomCaption .h1 {
+    position: absolute;
+    /* top: 5%; */
+    bottom: 10%;
+    color: #0045BF;
+    font-weight: bold;
+    text-align: right;
+    left: 3% !important;
+    font-size: 1.3rem;
+}
+#rio2{
+        /*width: 100%;*/
+        height: 5.2em;
+    }
+
+#machupicchu2{
+        /*width: 100%;*/
+        height: 5em;
+    }
+#curazao2{
+        /*width: 100%;*/
+     height: 2.5em;
+    margin-top: 50%;
+    }
+#cuba2{
+        /*width: 100%;*/
+    height: 2.5em;
+    margin-top: -70%;
+    }
+
+#mexico2{
+        /*width: 100%;*/
+    height: 4em;
+    margin-top: -95%;
+    }
+}	
+
+	
+@media only screen and (max-width: 320px){
+.coljuegos {
+    left: 7.3% !important;
+    bottom: -20px;
+    width: 60px;
+    height: auto;
+    width: 76px !important;
+}
+
+	.avion {
+    top: 41%;
+    /* position: absolute; */
+    margin-left: calc(11% - 220px);
+    width: 14%;
+    /* left: 29px; */	
+    display: none !important;
+}	
+.logoe {
+    left: 7.84% !important;
+    top: 5px;
+    width: 50px;
+}   
+.ciudad{
+    color: #e54f0f !important;
+    display:none;
+}
+.legales {
+    color: #0045BF;
+    font-size: 0.5rem;
+    left: 1% !important;
+    text-align: center;
+    width: 16%;
+    bottom: 20px;
+
+}
+.class{
+    bottom: -5%;
+    width: 570px;
+    height: auto;
+    left: 27%;
+}
+.tablinks{
+    width: 32.6%;
+    background-color: #ffffff00;
+}
+
+.tab1 button {
+    width: 32.6%;
+}
+
+.intro-pic {
+    height: 80%;
+    top: 10%;
+    max-height: 993px;
+    left: 0% !important;
+}
+.conoce{
+    position: relative;
+    top: 88.7% !important;
+    left: 45%;
+    display: none !important;
+}
+.right-arrow.touch {
+    right: 0px;
+}
+.ocho{
+        text-align: center !important;
+        margin-bottom: 5px !important;
+}
+
+    .cuba{
+        padding-top: 30px;
+        margin-left:    10px; 
+} 
+ .bottomCaption h1, .bottomCaption h2, .bottomCaption h3, .bottomCaption .h1 {
+    position: absolute;
+    /* top: 5%; */
+    bottom: 11%;
+    color: #0045BF;
+    font-weight: bold;
+    text-align: right;
+    left: 0% !important;
+    font-size: 1.2rem;
+    }
+#rio2{
+        /*width: 100%;*/
+        height: 5.2em;
+    }
+
+#machupicchu2{
+        /*width: 100%;*/
+        height: 5em;
+    }
+#curazao2{
+        /*width: 100%;*/
+     height: 2.5em;
+    margin-top: 50%;
+    }
+#cuba2{
+        /*width: 100%;*/
+    height: 2.5em;
+    margin-top: -70%;
+    }
+
+#mexico2{
+        /*width: 100%;*/
+    height: 4em;
+    margin-top: -95%;
+    }
+}
+    

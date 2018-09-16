@@ -102,14 +102,30 @@ body {
     min-height: 100%;
     padding-bottom: 77px;
 /*    background-color: #00000000;*/
-background-image: url(../img/bck.jpg);
+/*background-image: url(../img/bck.jpg);*/
     font-size: 10px;
+
+
+
+
+
+background: rgba(248,80,50,1);
+    background: -moz-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 0%, rgba(254,234,127,1) 0%, rgba(252,164,9,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,80,50,1)), color-stop(0%, rgba(241,111,92,1)), color-stop(0%, rgba(254,234,127,1)), color-stop(100%, rgba(252,164,9,1)));
+background: -webkit-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 0%, rgba(254,234,127,1) 0%, rgba(252,164,9,1) 100%);
+background: -o-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 0%, rgba(254,234,127,1) 0%, rgba(252,164,9,1) 100%);
+background: -ms-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 0%, rgba(254,234,127,1) 0%, rgba(252,164,9,1) 100%);
+background: linear-gradient(to bottom, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 0%, rgba(254,234,127,1) 0%, rgba(252,164,9,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#fca409', GradientType=0 );
 }
+
+
 @media (max-width: 600px) {
     body {
     padding-bottom: 246px;
+    }
 }
-}
+
 .page {
     background: #1A1A1A url('../img/inner_bck.jpg') 50% 0% no-repeat;
     text-align: center;
@@ -134,7 +150,7 @@ ul {
 .title {
     margin: 20px 0 60px;
     color: #ffffff;
-    font-family: 'Geometria-Medium', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 48px;
     font-weight: 100;
     letter-spacing: .075em;
@@ -207,13 +223,13 @@ ul {
 .container:last-child {
     padding-bottom: 4em;
 }
-@font-face {
-    font-family: 'Geometria-Medium';
+/*@font-face {
+   font-family: 'Roboto', sans-serif;;
     src: url('../fonts/geometria/2C86E1_0_0.eot');
     src: url('../fonts/geometria/2C86E1_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/geometria/2C86E1_0_0.woff2') format('woff2'), url('../fonts/geometria/2C86E1_0_0.woff') format('woff'), url('../fonts/geometria/2C86E1_0_0.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-}
+}*/
 .link {
     border-bottom: 1px solid;
     color: #ffffff;
@@ -233,7 +249,7 @@ ul {
     border: none;
     color: #ffffff;
     font-size: 18px;
-    text-transform: lowercase;
+/*    text-transform: lowercase;*/
     text-decoration: none;
 }
 .link-st:after {
@@ -318,7 +334,7 @@ ul {
     height: 75%;
     width: 100%;
     background-color: #131313;
-    font-family: 'Geometria-Medium', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
     font-size: 1.125em;
     line-height: 1.33;
     text-align: left;
@@ -381,7 +397,7 @@ ul {
     margin: 0 0 .85em;
     color: white;
     font-size: inherit;
-    font-family: 'PT Sans', Tahoma, sans-serif;
+   font-family: 'Roboto', sans-serif;
 }
 @media (max-height: 650px) {
     .Map-contacts>p {
@@ -478,7 +494,7 @@ _:-o-prefocus, body:last-child .Map-toggler {
     width: 100%;
     height: 77px;
     color: #ffffff00;
-    font-family: 'PT Sans', Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 10px;
     font-style: normal;
     /*text-align: center;*/
